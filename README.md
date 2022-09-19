@@ -12,33 +12,11 @@ Step 3: Calculate the sum of the right half array and find out the value of maxi
 **Solved Example:**
 a= {4, 25, -8, -2, -3, 1, 24, -7, 9, -10, -5, 23, -6, -4}
 mid=(low+high)/2=(1+14)/2=15/2=7.5=7
-
-Left Subarray: 
-i            Sum	   LeftSum	  MaxLeft
-7  a[7]=24  	24	   24	        7
-6  a[6]=1	    25	   25	        6
-5  a[5]=-3	  22	   25	        6
-4  a[4]=-2	  20	   25     	  6
-3  a[3]=-8	  12	   25	        6
-2  a[2]=25	  37	   37	        2
-1  a[1]=4	    41	   41	        1
-
-
-Right Subarray:
-j   	          Sum	  RightSum	MaxRight
-8  a[8]=-7	   -7	     -7	        8
-9  a[9]=9	      2	      2	        9
-10 a[10]=-10	 -8	      2	        9
-11 a[11]=-5	   -13	    2	        9
-12 a[12]=23	    10	   10       	12
-13 a[13]=-6	    4	     10	        12
-14 a[14]=-4	    0    	 10	        12
-
-
 From the above example we can conclude that Maximum sum from left side is 41 and from right side is 10 and hence the crossing subarray is starting from the index 1 and ending at index 12
 Crossing subarray of maximum sum is:
 b= {4, 25, -8, -2, -3, 1, 24, -7, 9, -10, -5, 23}
 Maximum sum is: 41+10=51
+
 
 Test Case 1: first element positive & last element negative
 a= {4, 25, -8, -2, -3, 1, 24, -7, 9, -10, -5, 23, -6, -4}
